@@ -12,7 +12,7 @@ namespace BreakfastingPhilosophers
         bool LeftHandIsBusy { get; set; }
         bool RightHandIsBusy { get; set; }
         string name;
-        bool thought;
+        bool thought=false;
 
         public Philosopher(string _name)
         {
@@ -34,7 +34,7 @@ namespace BreakfastingPhilosophers
 
                 if (!permission)
                 {
-                    thought = false;
+                    
                     Think();
                 }
             }
